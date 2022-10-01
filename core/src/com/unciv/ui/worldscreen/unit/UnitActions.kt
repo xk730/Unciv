@@ -51,47 +51,26 @@ object UnitActions {
             actionList += UnitAction(UnitActionType.StopAutomation) { unit.action = null }
 
         addSleepActions(actionList, unit, false)
-        
         addFortifyActions(actionList, unit, false)
-
         addPromoteAction(unit, actionList)
-        
         addUnitUpgradeAction(unit, actionList)
-        
         addPillageAction(unit, actionList, worldScreen)
-        
         addParadropAction(unit, actionList)
-        
         addAirSweepAction(unit, actionList)
-        
         addBuildingImprovementsAction(unit, actionList, tile, worldScreen, unitTable)
-        
         addAutomateBuildingImprovementsAction(unit, actionList)
-        
         addSetupAction(unit, actionList)
-        
         addFoundCityAction(unit, actionList, tile)
-        
         addCreateWaterImprovements(unit, actionList)
-        
         addGreatPersonActions(unit, actionList, tile)
-        
         addFoundReligionAction(unit, actionList)
-        
         addEnhanceReligionAction(unit, actionList)
-        
         actionList += getImprovementConstructionActions(unit, tile)
-        
         addActionsWithLimitedUses(unit, actionList, tile)
-        
         addExplorationActions(unit, actionList)
-        
         addTriggerUniqueActions(unit, actionList)
-        
         addAddInCapitalAction(unit, actionList, tile)
-
         addWaitAction(unit, actionList, worldScreen)
-
         addToggleActionsAction(unit, actionList, unitTable)
 
         return actionList
