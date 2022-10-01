@@ -86,8 +86,6 @@ object UnitActions {
         
         addExplorationActions(unit, actionList)
         
-        
-        
         addTriggerUniqueActions(unit, actionList)
         
         addAddInCapitalAction(unit, actionList, tile)
